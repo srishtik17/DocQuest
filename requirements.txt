@@ -12,3 +12,4 @@ python-pptx
 google-genai
 google-genai
 google-genai
+langchain-text-splitters

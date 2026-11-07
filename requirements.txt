@@ -10,3 +10,5 @@ plotly
 python-docx
 python-pptx
 google-genai
+google-genai
+google-genai

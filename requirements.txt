@@ -6,3 +6,4 @@ langchain
 PyPDF2
 python-dotenv
 streamlit
+plotly

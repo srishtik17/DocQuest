@@ -33,7 +33,7 @@ if not API_KEY:
     try:
         API_KEY = st.secrets["GEMINI_API"]
     except Exception:
-        API_KEY = 
+        API_KEY = ""
 
 EMBED_MODEL = "gemini-embedding-001"
 

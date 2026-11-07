@@ -28,7 +28,12 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
-API_KEY = os.getenv("GEMINI_API")
+API_KEY = os.getenv("GEMINI_API", "")
+if not API_KEY:
+    try:
+        API_KEY = st.secrets["GEMINI_API"]
+    except Exception:
+        API_KEY = 
 
 EMBED_MODEL = "gemini-embedding-001"
 

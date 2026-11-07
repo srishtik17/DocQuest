@@ -13,3 +13,7 @@ google-genai
 google-genai
 google-genai
 langchain-text-splitters
+numpy
+pandas
+openpyxl
+xlsxwriter

@@ -1,62 +1,153 @@
-# DocGenius-Revolutionizing-PDFs-with-AI
+# DocQuest – From Documents to Decisions 📄📊
 
-## About the Project
-This is a Python application that allows you to load a PDF and ask questions about it using natural language. The application uses a LLM to generate a response about your PDF. The LLM will not answer questions unrelated to the document. The application reads the PDF and splits the text into smaller chunks that can be then fed into a LLM. It uses OpenAI embeddings to create vector representations of the chunks. The application then finds the chunks that are semantically similar to the question that the user asked and feeds those chunks to the LLM to generate a response. Here is the Proof of Concept.
+**DocQuest** is a beginner-built, AI-powered document assistant and data analytics platform developed using Python and Streamlit.
 
-link of the website--https://deploy-gc24z8ssappdn4ucs33vbl.streamlit.app/
-## Required Libraries
+The project brings document interaction and data visualization together in one workspace. Users can upload documents, ask questions about their content, and explore structured data through interactive dashboards.
 
- - tiktoken
- - faiss-cpu
- - langchain
- - PyPDF2
- - python-dotenv
- - streamlit
- 
-#  Installation 
+This is an early version of the project, built as a hands-on learning experience. More improvements and features are planned.
 
-This is make you understand how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
+## 🚀 Features
 
-1. Clone the repo
+### 1. Document Assistant
+- Upload and interact with supported document formats.
+- Ask questions about uploaded documents.
+- Get context-aware answers using the Gemini API.
+- Retrieve relevant document information using semantic search.
 
- ```
- git clone https://github.com/KalyanMurapaka45/DocGenius-Revolutionizing-PDFs-with-AI.git
- ```
- 
- 2. Install the required libraries
+### 2. Data Analytics Workspace
+- Upload CSV and Excel files.
+- Explore and process structured data.
+- Generate interactive dashboards and visualizations.
+- View key metrics, summaries and data insights.
 
+### 3. AI-Powered Document Search
+- Generate text embeddings using Gemini.
+- Use FAISS for efficient similarity search.
+- Retrieve relevant content to support document-based answers.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| Streamlit | Application interface |
+| Gemini API | AI-powered responses and embeddings |
+| FAISS | Vector similarity search |
+| Pandas | Data processing and analysis |
+| Plotly | Interactive charts and dashboards |
+| LangChain Text Splitters | Document text chunking |
+
+## 📂 Project Structure
+
+```text
+DocQuest/
+│
+├── DocGenius/
+│   ├── PDFChat_Combined.py
+│   └── ...
+│
+├── Artifacts/
+│
+├── app.py
+├── requirements.txt
+└── README.md
 ```
+
+*Note: The project structure may evolve as new features are added.*
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/srishtik17/DocQuest.git
+cd DocQuest
+```
+
+### 2. Create a virtual environment (optional)
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Mac/Linux**
+```bash
+source venv/bin/activate
+```
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-```You will also need to add your OpenAI API key to the .env file.```
+### 4. Configure your Gemini API key
 
-3. To use the application, run the ```app.py``` file with the streamlit CLI (after having installed streamlit):
+Create a `.env` file in the project root:
 
+```env
+GEMINI_API=your_gemini_api_key
 ```
-streamlit run app.py
+
+Replace the placeholder with your own API key.
+
+**Important:** Never upload your `.env` file or expose your API key on GitHub.
+
+### 5. Run the application
+
+```bash
+streamlit run DocGenius/PDFChat_Combined.py
 ```
 
-# Contributing
+Open the local URL displayed in your terminal.
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+## 🌐 Live Demo
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!. ```Don't forget to star the project if you find it useful!```
+[Try DocQuest](https://deploy-gc24z8ssappdn4ucs33vbl.streamlit.app/)
 
-1. Fork the Project
+## 💻 GitHub Repository
 
-2. Create your Feature Branch
+[View DocQuest on GitHub](https://github.com/srishtik17/DocQuest)
 
-3. Commit your Changes
+## 📚 What I Learned
 
-4. Push to the Branch
+Building DocQuest helped me gain practical experience with:
 
-5. Open a Pull Request
+- Integrating the Gemini API into a Python application.
+- Understanding embeddings and semantic search.
+- Working with FAISS for vector-based retrieval.
+- Processing structured data using Pandas.
+- Creating interactive visualizations using Plotly.
+- Building an application interface with Streamlit.
+- Handling files, debugging errors and deploying an application.
 
-# Licnese
+## 🔮 Future Improvements
 
-Distributed under the GNU General Public License v3.0. See ```LICENSE.txt``` for more information.
+DocQuest is currently an early version and a continuous learning project.
 
-# Acknowledgements
+Some areas I would like to improve:
 
-We would like to express our gratitude to the open-source community for their invaluable inspiration and contributions. We also acknowledge the Python libraries used in this project and their respective contributors.
+- Enhancing the user interface and user experience.
+- Improving document processing and response quality.
+- Adding more analytics and visualization options.
+- Improving application performance and error handling.
+- Introducing additional features based on testing and feedback.
+
+## 👩‍💻 Author
+
+**Srishti Kumari**
+
+B.Tech Computer Science Student
+
+[GitHub](https://github.com/srishtik17) · [LinkedIn](https://www.linkedin.com/in/srishti-kumari-749a91383/)
+
+---
+
+*Built with curiosity, learning and a willingness to improve.*
